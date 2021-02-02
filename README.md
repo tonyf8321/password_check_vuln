@@ -70,7 +70,7 @@ in the terminal or command prompt:
 ```sh
 $ python3 checkmypass.py <passwords_doc>
 ```
-or, as an example assume I have a passwords text document named***passes.txt***I would enter:
+or, as an example assume I have a passwords text document named ***passes.txt*** I would enter:
 ```sh
 $ python3 checkmypass.py passes.txt
 ```
