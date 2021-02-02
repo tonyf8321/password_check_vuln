@@ -11,9 +11,11 @@ NOTICE: Do not use this project maliciously, it can be used to let individuals k
 
 # Installation/Setup
 
-Step 1: Get all of the files in a separate folder on your machine.
+#### Step 1: 
+Get all of the files in a separate folder on your machine.
 
-Step 2: Make the folder you have stored only the files obtained from this project a virtual envrionment.
+#### Step 2: 
+Make the folder you have stored only the files obtained from this project a virtual envrionment.
 
 From the command prompt for windows users:
 
@@ -31,7 +33,20 @@ $ python3 -m venv <path_folder_whereof_files>
 or
 >try using python or py to replace python3 depending on the alias that is on the machine.
 
+#### Step 3: 
+Activate the virtual environment.
+Replace venv with the folder like in the previous steps that use <path_folder_whereof_files>
 ```sh
-$ python3 -m venv <folder_where_files_are>
+$ ./<venv>/Scripts/activate
 ```
-Step 3: 
+After you enter that correctly, you will notice added text besides the command line name, reading the virtual environment name, which should be the folder name if you've followed the steps.
+
+#### Step 4: 
+Install dependencies.
+Using the *requirements.txt* file, install the dependencies listed.
+Try the following command while in the folder:
+```sh
+(<venv>)$ pip3 install -r requirements.txt
+```
+Note: you may use pip as long as it uses python3.
+
