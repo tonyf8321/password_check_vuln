@@ -18,7 +18,7 @@ Step 2: Make the folder you have stored only the files obtained from this projec
 From the command prompt for windows users:
 
 ```sh
-$ python3 -m venv path_folder_whereof_files
+$ python3 -m venv <path_folder_whereof_files>
 ```
 or
 >try using 
@@ -26,7 +26,7 @@ py to replace python3 depending on the alias that is on the machine.
 
 From the terminal:
 ```sh
-$ python3 -m venv path_folder_whereof_files>
+$ python3 -m venv <path_folder_whereof_files>
 ```
 or
 >try using python or py to replace python3 depending on the alias that is on the machine.
