@@ -61,7 +61,7 @@ Make a text document and each line containing one password.
 password123
 passon11
 mypass123
-mySuperSecure$password!!
+mySuperSecure$password(^
 ```
 **Note:** this passwords text document should have a **file extension of *.txt*** to avoid issues. Also, make sure this passwords document is in the same folder as the everything else.
 
@@ -95,5 +95,12 @@ mypass123 was found 2967 times... you should probably change your password.
 mySuperSecure$password(^ was NOT found. Carry on!
 ```
 The output represents how many time the password has been hacked, or not.
+This uses the sha1 to produce the long string of character right before showing how many time the password (if applicable) was hacked/found.
 
-# WHY?
+
+# Why
+Because with this program, instead of using the same site where it could calculate the password and spits out whether or not it has been hacked/found (through the internet), this allows only the first five characters of the hashed password to go through the internet, and then bring back the results of all matching Sha1 hashes (which could be thousands due to it gathering all first five hashed character matches) but through some code using the remaining hashed characters of a password, the program compares the full hash to the hashes (hundreds/thousands) that started with those first five character in the digest.
+
+This avoids sending valuable information across the internet that could be captured and used for malicious purposes.
+
+This also allows people to test passwords that they might use for an account.
