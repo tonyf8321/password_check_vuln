@@ -50,3 +50,50 @@ Try the following command while in the folder:
 ```
 Note: you may use pip as long as it uses python3.
 
+# Usage
+Assuming everything you get everything installed and setup correctly, whether through Pycharm or other means necessary, you may now use the program through the terminal along with a file that has passwords you want to test.
+
+#### Step 1:
+Make a text document and each line containing one password.
+
+*For example* the document may look like:
+```sh
+password123
+passon11
+mypass123
+mySuperSecure$password!!
+```
+**Note:** this passwords text document should have a **file extension of *.txt*** to avoid issues. Also, make sure this passwords document is in the same folder as the everything else.
+
+Now with everything in place,
+in the terminal or command prompt:
+```sh
+$ python3 checkmypass.py <passwords_doc>
+```
+or, as an example assume I have a passwords text document named***passes.txt***I would enter:
+```sh
+$ python3 checkmypass.py passes.txt
+```
+and the output, assuming passes.txt has content of 
+```sh
+password123
+passon11
+mypass123
+mySuperSecure$password(^
+```
+would be,
+
+output:
+```sh
+CBFDA C6008F9CAB4083784CBD1874F76618D2A97
+password123 was found 126927 times... you should probably change your password.
+E776E E55472637FCC76EFBC430118601FE1693CE
+passon11 was found 8 times... you should probably change your password.
+D2BF0 2E60ED38AF96751C5A78A8FFBE32F4598F9
+mypass123 was found 2967 times... you should probably change your password.
+14307 B1B7A404DBB4DD96819323CCDD4BE44F16C
+mySuperSecure$password(^ was NOT found. Carry on!
+```
+The output represents how many time the password has been hacked, or not.
+
+# WHY?
