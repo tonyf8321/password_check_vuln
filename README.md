@@ -11,6 +11,10 @@ NOTICE: Do not use this project maliciously, it can be used to let individuals k
 
 # Installation/Setup
 
+If you know how, get the files into a folder, make it a virtual environment, and install dependencies using requirements.txt.
+
+Otherwise: 
+
 #### Step 1: 
 Get all of the files in a separate folder on your machine.
 
