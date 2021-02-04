@@ -11,6 +11,8 @@ NOTICE: Do not use this project maliciously, it can be used to let individuals k
 
 # Installation/Setup
 
+Make sure you have virtual environment installed (this can be done through the use of pip or pip3).
+
 If you know how, get the files into a folder, make it a virtual environment, and install dependencies using requirements.txt.
 
 Otherwise: 
